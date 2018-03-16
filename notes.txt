@@ -26,3 +26,8 @@ Step 11: If Angular automatically uses '../environments/environment.prod' as you
 Step 12: Add additional modules below to your imports array:
     AngularFireDatabaseModule,
     AngularFireAuthModule
+Step 13: Install Bootstrap
+    $npm i --save bootstrap@4.0.0
+Step 14: Install bootstrap into the styles.css file.
+    @import "~bootstrap/dist/css/bootstrap.css";
+Step 15: 
