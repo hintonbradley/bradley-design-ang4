@@ -1,33 +1,28 @@
-**SETUP**
-Step 1: Switch to Node version 6 or higher.
-Step 2: Use angular-cli to create app structure
-    $ng new bradleydesign-ng4
-Step 3: cd into new dir and run server
-    $cd bradleydesign-ng4
-    $ng serve
-Step 4: Go to console.firebase.google.com and create a new database
-Step 5: Go to your src/environments/environment.ts file and inside the environment object, create a firebase:{} property.
-    export const environment = {
-        production: false,
-        firebase: {}
-    };
-Step 6: Go back to firebase and click the "Add Firebase to your web app" link. Copy all properties inside the config object and paste it inside the newly created firebase object in the environment.ts file.
-Step 7: Repeat step 5 and 6 in your environment.prod.ts file so the production configurations are the same as the development configurations.
-Step 8: In the terminal, install the firebase and angularfire modules.
-    $npm i --save firebase@4.2.0 angularfire2@4.0.0-rc.1
-Step 9: In the app.module.ts file, import dependencies from the new installations
-    import {AngularFireModule} from 'angularfire2';
-    import {AngularFireDatabaseModule} from 'angularfire2/database';
-    import {AngularFireAuthModule} from 'angularfire2/auth';
-Step 10: In the imports array in the app.module file, initialize the app with AngularFireModule.
-    AngularFireModule.initializeApp(environment.firebase)
-Step 11: If Angular automatically uses '../environments/environment.prod' as your environment, change it to the dev version.
-    import { environment } from '../environments/environment';
-Step 12: Add additional modules below to your imports array:
-    AngularFireDatabaseModule,
-    AngularFireAuthModule
-Step 13: Install Bootstrap
-    $npm i --save bootstrap@4.0.0
-Step 14: Install bootstrap into the styles.css file.
-    @import "~bootstrap/dist/css/bootstrap.css";
-Step 15: 
+___DATA STRUCTURE___
+projects = [
+    birdhouses = [
+        {
+            title: "5-Chamber Design",
+            text: "This birdhouse was built in 2015 and designed from a photograph of the client's childhood home.",
+            features: [
+                "5 separate compartments","Front and back dormers with perch","Front door/windows"
+            ]
+        },
+        {
+            title: "Cylindrical Birdfeeder",
+            text: "This one of a kind cylindrical design was built with numerous divisions circling the full length of the structure providing plenty space on one feeder.",
+            features: [
+                "Cylindrical body","Shingled rooftop","12 separate feeding compartments with perch"
+            ]
+        }
+    ],
+    mailboxes = [
+        {}
+    ],
+    minatureHouses = [
+        {}
+    ],
+    pethouses = [
+        {}
+    ]
+];

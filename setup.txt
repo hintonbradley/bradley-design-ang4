@@ -1,0 +1,58 @@
+__________SETUP__________
+Step 1: Switch to Node version 6 or higher.
+Step 2: Use angular-cli to create app structure
+    $ng new bradleydesign-ng4
+Step 3: cd into new dir and run server
+    $cd bradleydesign-ng4
+    $ng serve
+Step 4: Go to console.firebase.google.com and create a new database
+Step 5: Go to your src/environments/environment.ts file and inside the environment object, create a firebase:{} property.
+    export const environment = {
+        production: false,
+        firebase: {}
+    };
+Step 6: Go back to firebase and click the "Add Firebase to your web app" link. Copy all properties inside the config object and paste it inside the newly created firebase object in the environment.ts file.
+Step 7: Repeat step 5 and 6 in your environment.prod.ts file so the production configurations are the same as the development configurations.
+Step 8: In the terminal, install the firebase and angularfire modules.
+    $npm i --save firebase@4.2.0 angularfire2@4.0.0-rc.1
+Step 9: In the app.module.ts file, import dependencies from the new installations
+    import {AngularFireModule} from 'angularfire2';
+    import {AngularFireDatabaseModule} from 'angularfire2/database';
+    import {AngularFireAuthModule} from 'angularfire2/auth';
+Step 10: In the imports array in the app.module file, initialize the app with AngularFireModule.
+    AngularFireModule.initializeApp(environment.firebase)
+Step 11: If Angular automatically uses '../environments/environment.prod' as your environment, change it to the dev version.
+    import { environment } from '../environments/environment';
+Step 12: Add additional modules below to your imports array:
+    AngularFireDatabaseModule,
+    AngularFireAuthModule
+Step 13: Install Bootstrap
+    $npm i --save bootstrap@4.0.0
+Step 14: Install bootstrap into the styles.css file.
+    @import "~bootstrap/dist/css/bootstrap.css";
+
+__________COMPONENTS__________
+Step 1: Create a directory in src/app to hold all components.
+Step 2: cd into the newly created components directory.
+    $cd src/app/components
+Step 3: Create a new component for navbar using the angular-cli
+    $ng g c navbar
+
+__________ROUTING__________
+Step 1: In app.module.ts file, import the RouterModule.
+    import {RouterModule} from '@angular/router';
+Step 2: Under imports, add all the routes going to be used in the app.
+    RouterModule.forRoot([
+      {path: '', component: HomepageComponent},
+      {path: 'projects/:project-name', component: ProjectsComponent}
+    ])
+Step 3: Add a router-outlet to the template for the app.component.html.
+    <div class="container">
+        <router-outlet></router-outlet>
+    </div>
+Step 4: Go to the navbar and add routerLinks
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/projects/birdhouses">Projects</a>
+        </li>
+    </ul>
