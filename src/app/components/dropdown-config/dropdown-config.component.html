@@ -1,0 +1,12 @@
+<ul class="navbar-nav">
+  <!-- Adding ngbDropdown, ngbDropdownToggle and ngbDropdownMenu to be able to use dropdown for angular -->
+  <li ngbDropdown class="nav-item dropdown">
+    <a ngbDropdownToggle class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+    <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown01">
+      <a class="dropdown-item" routerLink="/projects/birdhouses">Bird Houses</a>
+      <a class="dropdown-item" routerLink="/projects/mailboxes">Mail Boxes</a>
+      <a class="dropdown-item" routerLink="/projects/miniaturehouses">Miniature Houses</a>
+      <a class="dropdown-item" routerLink="/projects/pethouses">Pet Houses</a>
+    </div>
+  </li>
+</ul>

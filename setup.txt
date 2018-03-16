@@ -56,3 +56,13 @@ Step 4: Go to the navbar and add routerLinks
             <a class="nav-link" routerLink="/projects/birdhouses">Projects</a>
         </li>
     </ul>
+
+__________THIRD PARTY MODULES__________
+Step 1: Install modules
+    $npm install --save @ng-bootstrap/ng-bootstrap
+Step 2: Import the new module in the app.module.ts file
+    import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+Step 3: Add it to the imports array.
+    NgbModule.forRoot(),
+    ...
+Step 4: 
