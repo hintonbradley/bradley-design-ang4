@@ -6,23 +6,46 @@ projects = [
             text: "This birdhouse was built in 2015 and designed from a photograph of the client's childhood home.",
             features: [
                 "5 separate compartments","Front and back dormers with perch","Front door/windows"
-            ]
+            ],
+            images: ['../../../img/birdhouse1.jpg']
         },
         {
             title: "Cylindrical Birdfeeder",
             text: "This one of a kind cylindrical design was built with numerous divisions circling the full length of the structure providing plenty space on one feeder.",
             features: [
                 "Cylindrical body","Shingled rooftop","12 separate feeding compartments with perch"
-            ]
+            ],
+            images: ['../../../img/birdhouse1.jpg']
         }
     ],
     mailboxes = [
-        {}
+        {
+            title: "5-Chamber Design",
+            text: "This birdhouse was built in 2015 and designed from a photograph of the client's childhood home.",
+            features: [
+                "5 separate compartments","Front and back dormers with perch","Front door/windows"
+            ],
+            images: ['../../../img/mailbox1.jpg']
+        }
     ],
     minatureHouses = [
-        {}
+        {
+            title: "5-Chamber Design",
+            text: "This birdhouse was built in 2015 and designed from a photograph of the client's childhood home.",
+            features: [
+                "5 separate compartments","Front and back dormers with perch","Front door/windows"
+            ],
+            images: ['../../../img/miniaturehouse1.jpg']
+        }
     ],
     pethouses = [
-        {}
+        {
+            title: "5-Chamber Design",
+            text: "This birdhouse was built in 2015 and designed from a photograph of the client's childhood home.",
+            features: [
+                "5 separate compartments","Front and back dormers with perch","Front door/windows"
+            ],
+            images: ['../../../img/pethouse1.jpg']
+        }
     ]
 ];

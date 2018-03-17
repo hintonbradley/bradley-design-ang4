@@ -8,6 +8,7 @@ import {NgbDropdownConfig} from '@ng-bootstrap/ng-bootstrap';
   providers: [NgbDropdownConfig] // add NgbDropdownConfig to the component providers
 })
 export class DropdownConfigComponent {
+  projects;
 
   constructor(config: NgbDropdownConfig) { 
     // customize default values of dropdowns used by this component tree
@@ -15,7 +16,26 @@ export class DropdownConfigComponent {
     config.autoClose = true;
   }
 
+
   ngOnInit() {
+    this.projects = [
+      {
+        title: 'Birdhouses',
+        link: 'birdhouses'
+      },
+      {
+        title: 'Mailboxes',
+        link: 'mailboxes'
+      },
+      {
+        title: 'Miniature Houses',
+        link: 'miniaturehouses'
+      },
+      {
+        title: 'Pethouses',
+        link: 'pethouses'
+      }
+    ];
   }
 
 }
