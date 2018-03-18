@@ -14,6 +14,7 @@ export class ProjectsComponent implements OnInit {
 
   // Adding ActivatedRoute to grab params
   constructor(private route: ActivatedRoute) {
+    //   Accessing data passed down from RouterModule.forRoot() method in app.module
       this.data = route.snapshot.data;
   }
 

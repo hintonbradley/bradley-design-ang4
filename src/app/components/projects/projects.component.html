@@ -1,12 +1,2 @@
 <p>{{title}} page works!</p>
-<div *ngFor="let item of project">
-  <p>Title: {{item.title}}</p>
-  <p>Description: {{item.text}}</p>
-  <ul>Features:
-    <li *ngFor="let feature of item.features">{{feature}}</li>
-  </ul>
-  <ul>Images:
-    <li *ngFor="let img of item.images"><img src="{{img}}"></li>
-  </ul>
-  <app-project></app-project>
-</div>
+<app-project [proj]='project'></app-project>

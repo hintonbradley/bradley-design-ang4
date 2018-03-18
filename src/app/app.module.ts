@@ -24,13 +24,13 @@ const projects = {
           features: [
               "5 separate compartments","Front and back dormers with perch","Front door/windows"
           ],
-          images: ['assets/img/birdhouse1.jpg']
+          images: ['assets/img/bluebird1.jpg','assets/img/bluebird2.jpg']
       },
       {
           title: "Cylindrical Birdfeeder",
           text: "This one of a kind cylindrical design was built with numerous divisions circling the full length of the structure providing plenty space on one feeder.",
           features: ["Cylindrical body","Shingled rooftop","12 separate feeding compartments with perch"],
-          images: ['assets/img/birdhouse1.jpg']
+          images: ['assets/img/redbird1.jpg','assets/img/redbird2.jpg']
       }
   ],
   mailboxes: [

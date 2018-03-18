@@ -1,3 +1,21 @@
-<p>
-  project works!
-</p>
+<div *ngFor="let item of proj">
+</div>
+<div *ngFor="let item of proj; let i = index let odd=odd; let even=even;" [attr.data-index]="i"  [ngClass]="{ odd: odd, even: even }">
+  <p>Title: {{item.title}}</p>
+  <p>Description: {{item.text}}</p>
+  <ul>Features:
+    <li *ngFor="let feature of item.features">{{feature}}</li>
+  </ul>
+  <!-- <ul>Images:
+    <li *ngFor="let img of item.images"><img src="{{img}}"></li>
+  </ul> -->
+  <ngb-carousel>
+    <ng-template ngbSlide  *ngFor="let img of item.images">
+      <img src="{{img}}" alt="Random first slide">
+      <!-- <div class="carousel-caption"> -->
+        <!-- <h3>First slide label</h3> -->
+        <!-- <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> -->
+      <!-- </div> -->
+    </ng-template>
+  </ngb-carousel>
+</div>
