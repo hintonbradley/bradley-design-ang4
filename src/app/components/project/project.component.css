@@ -1,19 +1,19 @@
-.even .proj-text {
+.project.even .proj-text, .project.odd .proj-carousel  {
     order: 1; 
 }
 
-.even .proj-carousel {
+.project.even .proj-carousel, .project.odd .proj-text {
     order: 2; 
-}
-
-.odd .proj-text {
-    order: 2; 
-}
-
-.odd .proj-carousel {
-    order: 1; 
 }
 
 .project {
     margin-top: 100px;
+}
+
+.proj-carousel {
+    text-align: center;
+}
+
+img {
+    width: 600px;
 }

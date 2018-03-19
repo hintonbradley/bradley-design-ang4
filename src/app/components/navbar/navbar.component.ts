@@ -6,10 +6,30 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
+  projects;
 
-  constructor() { }
+  constructor() {
+   }
 
   ngOnInit() {
+    this.projects = [
+      {
+        title: 'Birdhouses',
+        link: 'birdhouses'
+      },
+      {
+        title: 'Mailboxes',
+        link: 'mailboxes'
+      },
+      {
+        title: 'Miniature Houses',
+        link: 'miniaturehouses'
+      },
+      {
+        title: 'Pethouses',
+        link: 'pethouses'
+      }
+    ];
   }
 
 }

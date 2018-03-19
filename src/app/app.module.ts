@@ -13,7 +13,6 @@ import { HomepageComponent } from './components/homepage/homepage.component';
 import { ProjectComponent } from './components/project/project.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { CommentsComponent } from './components/comments/comments.component';
-import { DropdownConfigComponent } from './components/dropdown-config/dropdown-config.component';
 
 // Demonstrating how to pass data down to routes
 const projects = {
@@ -78,8 +77,7 @@ const projects = {
     HomepageComponent,
     ProjectComponent,
     ProjectsComponent,
-    CommentsComponent,
-    DropdownConfigComponent
+    CommentsComponent
   ],
   imports: [
     BrowserModule,

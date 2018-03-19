@@ -1,21 +1,15 @@
-<div *ngFor="let item of proj; let i = index; let odd=odd; let even=even;" [ngClass]="{ odd: odd, even: even }" class="d-flex justify-content-between project">
-  <div class="d-inline-block proj-text">
+<div class="container"></div>
+<div class="row" *ngFor="let item of proj; let odd=odd; let even=even;" [ngClass]="{ odd: odd, even: even }" class="d-flex justify-content-between project">
+  <div class="col-md-4 d-inline-block proj-text">
     <p>Title: {{item.title}}</p>
     <p>Description: {{item.text}}</p>
     <ul>Features:
       <li *ngFor="let feature of item.features">{{feature}}</li>
     </ul>
-    <!-- <ul>Images:
-      <li *ngFor="let img of item.images"><img src="{{img}}"></li>
-    </ul> -->
   </div>
-  <ngb-carousel class="d-inline-block proj-carousel">
+  <ngb-carousel class="col-md-8 d-inline-block proj-carousel">
     <ng-template ngbSlide  *ngFor="let img of item.images">
       <img src="{{img}}" alt="Random first slide">
-      <!-- <div class="carousel-caption"> -->
-        <!-- <h3>First slide label</h3> -->
-        <!-- <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> -->
-      <!-- </div> -->
     </ng-template>
   </ngb-carousel>
 </div>
