@@ -1,7 +1,19 @@
-.even {
-    background-color: pink;
+.even .proj-text {
+    order: 1; 
 }
 
-.odd {
-    background-color: lightblue;
+.even .proj-carousel {
+    order: 2; 
+}
+
+.odd .proj-text {
+    order: 2; 
+}
+
+.odd .proj-carousel {
+    order: 1; 
+}
+
+.project {
+    margin-top: 100px;
 }

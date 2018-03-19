@@ -24,13 +24,13 @@ const projects = {
           features: [
               "5 separate compartments","Front and back dormers with perch","Front door/windows"
           ],
-          images: ['assets/img/bluebird1.jpg','assets/img/bluebird2.jpg']
+          images: ['assets/img/birdhouse1.jpg','assets/img/birdhouse2.jpg','assets/img/birdhouse3.jpg']
       },
       {
           title: "Cylindrical Birdfeeder",
           text: "This one of a kind cylindrical design was built with numerous divisions circling the full length of the structure providing plenty space on one feeder.",
           features: ["Cylindrical body","Shingled rooftop","12 separate feeding compartments with perch"],
-          images: ['assets/img/redbird1.jpg','assets/img/redbird2.jpg']
+          images: ['assets/img/cylbirdhouse1.jpg']
       }
   ],
   mailboxes: [
@@ -38,13 +38,13 @@ const projects = {
           title: "Panel Design Mailbox",
           text: "This mailbox was built in 2008 and the design was loosely modeled after Larry's home residence.",
           features: ["Cottage lap siding","Fish-scale style roof","Vertically hinged front door","Handcrafted heart icons"],
-          images: ['assets/img/mailbox1.jpg']
+          images: ['assets/img/mailbox1.jpg','assets/img/mailbox2.jpg','assets/img/mailbox3.jpg']
       },
       {
         title: "Brick Design Mailbox",
         text: "This mailbox was built in 2008 for a neighbor.",
         features: ["Batten seam roof","Brick painted siding","Vertically hinged front door"],
-        images: ['assets/img/mailbox1.jpg']
+        images: ['assets/img/brickhouse1.jpg','assets/img/brickhouse2.jpg']
     }
   ],
   miniaturehouses: [
@@ -52,7 +52,7 @@ const projects = {
           title: "Half Timber Model",
           text: "This miniature house was built for a family friend's garden. Inspired by German architecture, this is a half-timber model complete with shutters and window boxes.",
           features: ["Detailed windows and doors","Batten seam roof"],
-          images: ['assets/img/miniaturehouse1.jpg']
+          images: ['assets/img/miniaturehouse1.jpg','assets/img/miniaturehouse2.jpg','assets/img/miniaturehouse3.jpg',]
       }
   ],
   pethouses: [
@@ -60,13 +60,13 @@ const projects = {
           title: "3-Tiered Cat Castle",
           text: "This cat castle design was built for two cats: \"The Queen\" and \"Goddess\". Plenty of space in this three level design so each cat has plenty of room to sit on her perch and watch over her kingdom.",
           features: ["Penthouse with double balcony","Mid-level servants quarters","Bottom level for lowly guests","Includes side cabinet with adjustable shelves"],
-          images: ['assets/img/pethouse1.jpg']
+          images: ['assets/img/cathouse1.jpg','assets/img/cathouse2.jpg','assets/img/cathouse3.jpg','assets/img/cathouse4.jpg']
       },
       {
         title: "Raised Doghouse",
         text: "This doghouse was built for the biggest furry cuddle bug you've ever seen. Complete with rear vents to keep this dog cool in the summertime, Bruce, the pit bull, loves his home away from home.",
         features: ["Cottage lap siding","Raised platform design","Shingled rooftop","Rear double vents"],
-        images: ['assets/img/pethouse1.jpg']
+        images: ['assets/img/pethouse1.jpg','assets/img/pethouse2.jpg','assets/img/pethouse3.jpg']
     }
   ]
 };
