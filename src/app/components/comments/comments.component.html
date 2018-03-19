@@ -1,3 +1,38 @@
-<p>
-  comments works!
-</p>
+<div ng-show="addComment" class="text-ctr leaveComment">
+    <p>Like these mailbox designs? Leave a comment below.</p>
+    <button type="button" class="btn bkgd-red white" ng-click="leaveComment()">Leave Comment</button>
+  </div>
+
+  <div ng-show="showFields" class="ng-hide">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3">
+					</div>
+					<div class="col-sm-6">
+						<div class="submit-comment">
+							<form name="newComment" novalidate="" class="ng-pristine ng-invalid ng-invalid-required">
+								<div id="errorBox">
+									<div id="regularError" class="alert alert-danger ng-binding ng-hide" ng-show="errorMessage">false</div>
+								</div>
+								<label>Name:</label>
+								<input class="form-control ng-pristine ng-untouched ng-invalid ng-invalid-required" type="text" required="" ng-model="newComment.name">
+								<label>Comment:</label>
+								<textarea class="form-control ng-pristine ng-untouched ng-invalid ng-invalid-required" rows="4" required="" ng-model="newComment.description"></textarea>
+								<div class="comment-btns">
+							    	<button class="btn text-ctr bkgd-red white float-rt" ng-click="sendComment(1, 'mailboxes')">Submit</button>
+								    <button class="btn text-ctr bkgd-red white float-rt" ng-click="cancelComment()">Cancel</button>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="col-sm-3">
+					</div>
+				</div>
+			</div>
+    </div>
+    
+    <div ng-show="addedComment" class="addedComment ng-hide">
+        <p class="text-ctr red">Thank you for your comment.</p>
+      </div>
+
+
