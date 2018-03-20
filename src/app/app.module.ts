@@ -59,7 +59,7 @@ const projects = {
           title: "3-Tiered Cat Castle",
           text: "This cat castle design was built for two cats: \"The Queen\" and \"Goddess\". Plenty of space in this three level design so each cat has plenty of room to sit on her perch and watch over her kingdom.",
           features: ["Penthouse with double balcony","Mid-level servants quarters","Bottom level for lowly guests","Includes side cabinet with adjustable shelves"],
-          images: ['assets/img/cathouse1.jpg','assets/img/cathouse2.jpg','assets/img/cathouse3.jpg','assets/img/cathouse4.jpg']
+          images: ['assets/img/cathouse1.jpg','assets/img/cathouse2.jpg','assets/img/cathouse3.jpg']
       },
       {
         title: "Raised Doghouse",
@@ -93,6 +93,5 @@ const projects = {
   providers: [NgbDropdownConfig],
   bootstrap: [AppComponent],
 })
-export class AppModule { 
-  maindata: Object = {name:'jim'};
+export class AppModule {
 }

@@ -6,14 +6,28 @@
     order: 2; 
 }
 
-.project {
-    margin-top: 100px;
-}
-
 .proj-carousel {
     text-align: center;
 }
 
-img {
-    width: 600px;
+ngb-carousel img {
+    width: 100%;
+    min-width: 325px;
+    max-width: 650px;
+}
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: block;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .project.odd .proj-text {
+        order: 1; 
+    }
+    .project.odd .proj-carousel  {
+        order: 2; 
+    }
 }
