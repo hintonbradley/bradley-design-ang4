@@ -92,7 +92,9 @@ const projects = {
       {path: 'projects/:project-name', component: ProjectsComponent, data: projects}
     ])
   ],
-  providers: [NgbDropdownConfig],
+  providers: [
+    NgbDropdownConfig
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {

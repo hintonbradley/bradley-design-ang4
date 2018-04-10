@@ -66,3 +66,13 @@ Step 3: Add it to the imports array.
     NgbModule.forRoot(),
     ...
 Step 4: 
+
+
+__________SERVICES______________
+Step 1: Inside the Services directory, create a new service in the command line
+    $npm ng g s comment
+Step 2: In the app.module and register the new service as a provider
+    providers: [
+        NgbDropdownConfig,
+        CommentService
+    ],

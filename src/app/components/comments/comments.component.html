@@ -1,5 +1,4 @@
-<p>Like these projects? Leave a comment!</p>
-<form>
+<form #commentForm="ngForm" (ngSubmit)="submit(commentForm)">
 	<div class="form-group">
 		<div class="alert alert-danger" *ngIf="name.touched && !name.valid">
 			<div *ngIf="name.errors.required">Name is required</div>
@@ -13,5 +12,5 @@
 		<label for="comment">Comment</label>
 		<input required ngModel type="textarea" name="comment" id="comment" rows="5" class="form-control" #comment="ngModel">
 	</div>
-	<button class="btn btn-primary">Submit</button>
+	<button class="btn btn-primary" [disabled]="!commentForm.valid">Submit</button>
 </form>
