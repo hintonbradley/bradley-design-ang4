@@ -14,3 +14,12 @@
 	</div>
 	<button class="btn btn-primary" [disabled]="!commentForm.valid">Submit</button>
 </form>
+
+<div *ngFor="let comment of allComments">
+	<div *ngIf="comment.project==id">
+		<hr>
+		<p>{{comment.dateadded}}</p>
+		<p>{{comment.author}}</p>
+		<p>{{comment.comment}}</p>
+	</div>
+</div>

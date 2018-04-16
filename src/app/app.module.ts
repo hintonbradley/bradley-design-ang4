@@ -15,6 +15,9 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { CommentsComponent } from './components/comments/comments.component';
 import { FormsModule}   from '@angular/forms';
 
+// Services
+import {CommentsService} from './services/comments.service';
+
 // Demonstrating how to pass data down to routes
 const projects = {
   birdhouses: [
@@ -93,6 +96,7 @@ const projects = {
     ])
   ],
   providers: [
+    CommentsService,
     NgbDropdownConfig
   ],
   bootstrap: [AppComponent],

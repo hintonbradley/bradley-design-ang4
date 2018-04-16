@@ -1,4 +1,25 @@
+nav {
+    height: 50px;
+}
+
 nav a {
+    color: lightgrey;
+    padding: 16px 1vw;
+}
+
+nav a:hover {
+    background: #464646;
+}
+
+nav a:focus {
+    color: lightgrey;
+}
+
+nav a.navbar-brand  {
+    padding: 10px 5px;
+}
+
+nav a.navbar-brand:hover  {
     color: lightgrey;
 }
 
@@ -10,15 +31,17 @@ nav a {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='lightgrey' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-button:focus {outline:0;}
+button:focus {
+    outline:0;
+}
 
 nav ul{
 margin: 0px;
 }
 
-nav ul li {
+/*nav ul li {
     margin: 0px 1vw;
-}
+}*/
 
 @media only screen and (max-width: 767px) {
 

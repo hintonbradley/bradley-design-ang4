@@ -8,7 +8,6 @@ import {NgbCarouselConfig} from '@ng-bootstrap/ng-bootstrap';
   providers: [NgbCarouselConfig] // add NgbCarouselConfig to the component providers
 })
 export class ProjectComponent implements OnInit {
-  // @Input() public state: any;
   @Input() proj: any;
 
   constructor(config: NgbCarouselConfig) {
@@ -17,6 +16,6 @@ export class ProjectComponent implements OnInit {
   }
 
   ngOnInit() {
+    console.log('proj in project is: ',this.proj)
   }
-
 }

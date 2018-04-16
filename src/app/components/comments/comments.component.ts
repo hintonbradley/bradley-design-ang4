@@ -1,19 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import {CommentsService} from '../../services/comments.service';
 
 @Component({
-  selector: 'app-comments',
-  templateUrl: './comments.component.html',
-  styleUrls: ['./comments.component.css']
+	selector: 'app-comments',
+	templateUrl: './comments.component.html',
+	styleUrls: ['./comments.component.css']
 })
+
 export class CommentsComponent implements OnInit {
+	@Input() id: string;
+	allComments: any;
 
-  constructor() { }
+	constructor(private commentsService: CommentsService) {}
 
-  ngOnInit() {
-  }
-
-  submit(f) {
-  	console.log(f.value)
-  }
+	ngOnInit() {
+		this.commentsService.getComments().subscribe(cmts => {
+			this.allComments = cmts;
+		})
+	}
 
 }
